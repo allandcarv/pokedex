@@ -1,3 +1,5 @@
+import { Pokemon } from './features/pokemon/components/Pokemon';
+
 export function App() {
-  return <h1>Pokedex</h1>;
+  return <Pokemon />;
 }
