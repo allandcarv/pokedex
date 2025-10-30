@@ -8,6 +8,7 @@ import simpleImportSort from 'eslint-plugin-simple-import-sort';
 import vitestPlugin from 'eslint-plugin-vitest';
 import globals from 'globals';
 import tseslint from 'typescript-eslint';
+import vanillaExtract from '@antebudimir/eslint-plugin-vanilla-extract';
 
 export default defineConfig([
   globalIgnores(['dist', 'node_modules', '.vite']),
@@ -19,6 +20,7 @@ export default defineConfig([
       tseslint.configs.recommended,
       reactHooks.configs['recommended-latest'],
       reactRefresh.configs.vite,
+      vanillaExtract.configs.recommended,
     ],
     languageOptions: {
       ecmaVersion: 'latest',
