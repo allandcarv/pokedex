@@ -21,5 +21,5 @@ export async function getPokemons(limit = '20', offset = '0') {
   const responseJson = await response.json();
   const parsedJson = safeParseSchema(pokemonsResponse, responseJson, { name: 'Pokemons API' });
 
-  console.log(parsedJson);
+  return parsedJson;
 }

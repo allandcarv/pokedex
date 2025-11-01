@@ -1,3 +1,4 @@
+import vanillaExtract from '@antebudimir/eslint-plugin-vanilla-extract';
 import js from '@eslint/js';
 import { defineConfig, globalIgnores } from 'eslint/config';
 import importPlugin from 'eslint-plugin-import';
@@ -8,7 +9,6 @@ import simpleImportSort from 'eslint-plugin-simple-import-sort';
 import vitestPlugin from 'eslint-plugin-vitest';
 import globals from 'globals';
 import tseslint from 'typescript-eslint';
-import vanillaExtract from '@antebudimir/eslint-plugin-vanilla-extract';
 
 export default defineConfig([
   globalIgnores(['dist', 'node_modules', '.vite']),
